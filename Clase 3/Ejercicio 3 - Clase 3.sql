@@ -9,7 +9,7 @@ CREATE VIEW tickets_008 AS
 );
 SELECT * FROM tickets_008;
 
-
+---------------------------------------------------
 
 CREATE VIEW vista1_Clase3_008_03 AS
 (
@@ -19,7 +19,7 @@ CREATE VIEW vista1_Clase3_008_03 AS
 );
 SELECT * FROM vista1_Clase3_008;
 
-
+---------------------------------------------------
 
 CREATE VIEW vista2_Clase3_008 AS
 (
@@ -29,7 +29,7 @@ CREATE VIEW vista2_Clase3_008 AS
 );
 SELECT * from vista2_Clase3_008;
 
-
+--------------------------------------------------
 
 CREATE VIEW vista3_Clase3_008 AS
 (
