@@ -1,0 +1,15 @@
+# Requires the PyMongo package.
+# https://api.mongodb.com/python/current
+
+client = MongoClient('mongodb+srv://AntonioGalaviz:Antonio612422!!@cluster0.orkur.mongodb.net/test?authSource=admin&replicaSet=atlas-zx4z1e-shard-0&connectTimeoutMS=600000&socketTimeoutMS=6000000&readPreference=primary&appname=MongoDB%20Compass&ssl=true')
+filter={
+    'house_rules': {
+        '$in': [
+            re.compile(r"no partys(?i)"), re.compile(r"no parties(?i)")
+        ]
+    }
+}
+
+result = client['sample_airbnb']['listingsAndReviews'].find(
+  filter=filter
+)
