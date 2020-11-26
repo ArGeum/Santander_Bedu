@@ -1,0 +1,13 @@
+[
+    {
+        '$match': {
+            'amenities': {
+                '$in': [
+                    re.compile(r"wifi(?i)"), re.compile(r"Ethernet(?i)")
+                ]
+            }
+        }
+    }, {
+        '$count': 'Casas con internet'
+    }
+]
